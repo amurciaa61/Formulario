@@ -61,7 +61,8 @@
                                Margin="10,0"
                                Text="Nombre"
                                Width="50" />
-                    <Image DockPanel.Dock="Right"
+                    <Image ToolTip="Máximo 100 caracteres"
+                        DockPanel.Dock="Right"
                            Height="20"
                            Width="20"
                            Margin="5,0"
@@ -73,7 +74,7 @@
                                Margin="10,0"
                                Text="Edad"
                                Width="50" />
-                    <Image DockPanel.Dock="Right"
+                    <Image ToolTip="Número entre 0 y 100" DockPanel.Dock="Right"
                            Height="20"
                            Width="20"
                            Margin="5,0"
@@ -85,7 +86,7 @@
                                Margin="10,0"
                                Text="Direccion"
                                Width="50" />
-                    <Image DockPanel.Dock="Right"
+                    <Image ToolTip="Incluir el código postal" DockPanel.Dock="Right"
                            Height="20"
                            Width="20"
                            Margin="5,0"
