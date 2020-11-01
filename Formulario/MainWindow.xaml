@@ -29,10 +29,8 @@
                 <StackPanel DockPanel.Dock="Right"
                             Orientation="Horizontal">
                     <Button Content="Aceptar"
-                            Margin="5,0"
-                            Width="100" />
-                    <Button Content="Cancelar"
-                            Width="100" />
+                            Margin="5,0" />
+                    <Button Content="Cancelar" />
                 </StackPanel>
             </DockPanel>
         </StackPanel>
@@ -41,74 +39,44 @@
                Source="Imagenes/foto.jpg"
                Width="240"
                Stretch="Fill" />
-        <Border BorderBrush="Black"
-                BorderThickness="3"
-                CornerRadius="5"
+        <Border Style="{StaticResource border1}"
                 DockPanel.Dock="Top"
                 Background="#87CEFA"
                 Margin="5,0,5,0">
-            <Border.Effect>
-                <DropShadowEffect ShadowDepth="5"
-                                  Direction="330"
-                                  Color="Black"
-                                  Opacity="0.9"
-                                  BlurRadius="4" />
-            </Border.Effect>
             <StackPanel>
                 <DockPanel Margin="0,10,5,0">
-                    <TextBlock DockPanel.Dock="Left"
-                               Margin="10,0"
-                               Text="Nombre"
-                               Width="50" />
-                    <Image ToolTip="Máximo 100 caracteres"
-                           DockPanel.Dock="Right"
-                           Height="20"
-                           Width="20"
-                           Margin="5,0"
-                           Source="Imagenes/info.png" />
-                    <TextBox Height="20" />
+                    <TextBlock Style="{StaticResource camposTextBlock}"
+                               DockPanel.Dock="Left"
+                               Text="Nombre" />
+                    <Image Style="{StaticResource imagenInfo}"
+                           ToolTip="Máximo 100 caracteres"
+                           DockPanel.Dock="Right" />
+                    <TextBox />
                 </DockPanel>
                 <DockPanel Margin="0,5,5,0">
-                    <TextBlock DockPanel.Dock="Left"
-                               Margin="10,0"
-                               Text="Edad"
-                               Width="50" />
-                    <Image ToolTip="Número entre 0 y 100"
-                           DockPanel.Dock="Right"
-                           Height="20"
-                           Width="20"
-                           Margin="5,0"
-                           Source="Imagenes/info.png" />
-                    <TextBox Height="20" />
+                    <TextBlock Style="{StaticResource camposTextBlock}"
+                               DockPanel.Dock="Left"
+                               Text="Edad" />
+                    <Image Style="{StaticResource imagenInfo}"
+                           ToolTip="Número entre 0 y 100"
+                           DockPanel.Dock="Right" />
+                    <TextBox />
                 </DockPanel>
                 <DockPanel Margin="0,5,5,10">
-                    <TextBlock DockPanel.Dock="Left"
-                               Margin="10,0"
-                               Text="Direccion"
-                               Width="50" />
-                    <Image ToolTip="Incluir el código postal"
-                           DockPanel.Dock="Right"
-                           Height="20"
-                           Width="20"
-                           Margin="5,0"
-                           Source="Imagenes/info.png" />
-                    <TextBox Height="20" />
+                    <TextBlock Style="{StaticResource camposTextBlock}"
+                               DockPanel.Dock="Left"
+                               Text="Direccion" />
+                    <Image Style="{StaticResource imagenInfo}"
+                           ToolTip="Incluir el código postal"
+                           DockPanel.Dock="Right" />
+                    <TextBox />
                 </DockPanel>
             </StackPanel>
         </Border>
-        <Border BorderBrush="Black"
-                BorderThickness="3"
-                CornerRadius="5"
+        <Border Style="{StaticResource border1}"
                 DockPanel.Dock="Top"
                 Margin="5,20,5,0"
                 Background="#FFFFE0">
-            <Border.Effect>
-                <DropShadowEffect ShadowDepth="5"
-                                  Direction="330"
-                                  Color="Black"
-                                  Opacity="0.9"
-                                  BlurRadius="4" />
-            </Border.Effect>
             <StackPanel Orientation="Horizontal">
                 <GroupBox Header="Aficiones"
                           Margin="10,10,10,15">

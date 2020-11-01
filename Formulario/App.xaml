@@ -4,6 +4,47 @@
              xmlns:local="clr-namespace:Formulario"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Width"
+                    Value="100" />
+        </Style>
+        <Style TargetType="{x:Type Border}" x:Key="border1">
+            <Setter Property="BorderBrush"
+                    Value="Black" />
+            <Setter Property="BorderThickness"
+                    Value="3" />
+            <Setter Property="CornerRadius"
+                    Value="5" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect ShadowDepth="5"
+                                      Direction="330"
+                                      Color="Black"
+                                      Opacity="0.9"
+                                      BlurRadius="4" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type Image}"
+               x:Key="imagenInfo">
+            <Setter Property="Margin"
+                    Value="5,0" />
+            <Setter Property="Width"
+                    Value="20" />
+            <Setter Property="Height"
+                    Value="20" />
+            <Setter Property="Source"
+                    Value="Imagenes/info.png" />
+        </Style>
+        <Style TargetType="{x:Type TextBlock}" x:Key="camposTextBlock">
+            <Setter Property="Margin"
+                    Value="10,0" />
+            <Setter Property="Width"
+                    Value="50" />
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Height"
+                    Value="20" />
+        </Style>
     </Application.Resources>
 </Application>
